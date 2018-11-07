@@ -50,5 +50,8 @@ class Testing < Minitest::Test
 	def test_for_51_cents
 		assert_equal({}, coin_changer(51))
 	end
+	def test_for_60_cents
+		assert_equal({}, coin_changer(60))
+	end
 
 end
