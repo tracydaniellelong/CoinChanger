@@ -38,5 +38,14 @@ class Testing < Minitest::Test
 	def test_for_34_cents
 		assert_equal({:quarter=>1, :nickel=>1, :penny=>4}, coin_changer(34))
 	end
+	def test_for_35_cents
+		assert_equal({:quarter=>1, :dime=>1}, coin_changer(35))
+	end
+	def test_for_40_cents
+		assert_equal({:quarter=>1, :dime=>1, :nickel=>1}, coin_changer(40))
+	end
+	def test_for_50_cents
+		assert_equal({}, coin_changer(50))
+	end
 
 end
