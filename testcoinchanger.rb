@@ -18,7 +18,7 @@ class Testing < Minitest::Test
 		assert_equal({:nickel=>1, :penny=>4}, coin_changer(9))
 	end
 	def test_for_10_cents
-		assert_equal({}, coin_changer(10))
+		assert_equal({:dime=>1}, coin_changer(10))
 	end
 
 end
