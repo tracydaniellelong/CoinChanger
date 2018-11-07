@@ -7,7 +7,10 @@ def coinChanger(cents)
 	}
 	change = {}
 	coins.each do |coin, value|
+		p coin
+		p value
 		change = {coin => cents / value}
+		cents %= value
 	end
 	return change
 end
