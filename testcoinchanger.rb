@@ -6,7 +6,7 @@ class Testing < Minitest::Test
 		assert_equal(1, 1)
 	end
 	def test_for_11_cents
-		assert_equal("dime => 1, penny => 1", change(11))
+		assert_equal("dime => 1, penny => 1", coinChanger(11))
 	end
 
 end
