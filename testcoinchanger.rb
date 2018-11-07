@@ -20,5 +20,8 @@ class Testing < Minitest::Test
 	def test_for_10_cents
 		assert_equal({:dime=>1}, coin_changer(10))
 	end
+	def test_for_19_cents
+		assert_equal({}, coin_changer(19))
+	end
 
 end
