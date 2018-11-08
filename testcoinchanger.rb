@@ -53,5 +53,8 @@ class Testing < Minitest::Test
 	def test_for_60_cents
 		assert_equal({:quarter=>2, :dime=>1}, coin_changer(60))
 	end
+	def test_for_99_cents
+		assert_equal({}, coin_changer(99))
+	end
 
 end
