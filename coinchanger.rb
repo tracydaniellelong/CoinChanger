@@ -11,7 +11,7 @@ def coin_changer(cents)
 	
 		if (cents / value) >= 1
 			change[coin] = cents / value
-			cents -= value
+			cents %= value
 		end
 		
 	end
