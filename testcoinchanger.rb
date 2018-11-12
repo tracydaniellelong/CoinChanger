@@ -44,8 +44,8 @@ class Testing < Minitest::Test
 	def test_for_40_cents
 		assert_equal({:quarter=>1, :dime=>1, :nickel=>1}, coin_changer(40))
 	end
-	def test_for_50_cents
-		assert_equal({:quarter=>2}, coin_changer(50))
+	def test_for_string
+		assert_equal("Enter only Integers.", coin_changer("50"))
 	end
 	def test_for_51_cents
 		assert_equal({:quarter=>2, :penny=>1}, coin_changer(51))
